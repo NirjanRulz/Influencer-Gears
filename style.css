@@ -160,7 +160,7 @@ li a{
 
 .footer{
     background: #0A0826;
-    width: 100%;
+    width: 1920px;
     padding: 50px;
     text-align: center;
 }
@@ -190,6 +190,57 @@ li a{
     color: white;
 }
 
+                /*************************** 
+                        Responsive  
+                ****************************/
+
+@media screen and (max-width: 576px) {
+    .journey{
+        flex-direction: column;
+    }
+    /* .journey-heading, .journey-description, .featured-heading, .featured-description, .order-btn{
+        width: 100%;
+        padding-left: 15px; */
+        .featured-text, .journey{
+            padding-left: 15px;
+        }
+        .nav-bar{
+            /* display: none; */
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        .nav ul{
+            flex-direction: column;
+        }
+        .nav, .header{
+            width: 100%;
+        }
+        .market{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .collection{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .featured-product{
+            flex-direction: column-reverse;
+        }
+        hr{
+            display: none;
+        }
+        .camera{
+            width: 100%;
+        }
+        .gear{
+            width: 100%;
+        }
+        .footer{
+            width: 253px;
+        }
+    }
 
 
 
